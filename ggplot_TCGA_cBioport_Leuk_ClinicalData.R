@@ -2,8 +2,6 @@ library(shiny)
 library(plotly)
 load("AML_cBioportal_ClinicalData.rda")
 dat<-myclinicaldata[,-c(6,7,14,19,22)]
-data(diamonds, package = "ggplot2")
-#nms <- names(diamonds)
 nms<-names(dat)
 ui <- fluidPage(
   
